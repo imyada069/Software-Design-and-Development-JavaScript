@@ -74,12 +74,69 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
 2. เพิ่มกล่องข้อความและปุ่มสำหรับแสดงผล:
    - มีช่องกรอกข้อความ
    - มีปุ่มเมื่อคลิกแล้วจะแสดงข้อความที่กรอกในช่องข้อความ  (สามารถใช้ document.getElementById('id ของ textbox').value เพื่อดึงข้อมูลในช่อง)
+
 ### บันทึกผลการทดลอง 
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ทดลอง JavaScript</title>
+
+    <style>
+        .button-group {
+            display: flex;   /* เรียงแนวนอน */
+            gap: 5px;        /* เว้นระยะเล็กน้อย */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ทดลอง JavaScript</h2>
+
+    <!-- กลุ่มปุ่มแนวนอน -->
+    <div class="button-group">
+        <button onclick="alert('ชื่อนักศึกษา: นางสาวญาดา แกล้วกล้า');">
+            ปุ่มที่ 1
+        </button>
+
+        <button id="btn2">
+            ปุ่มที่ 2
+        </button>
+
+        <button onclick="showTime();">
+            ปุ่มที่ 3
+        </button>
+    </div>
+
+    <hr>
+
+    <h3>ทดลองรับค่าจาก Textbox</h3>
+
+    <input type="text" id="myText" placeholder="พิมพ์ข้อความที่นี่">
+    <button onclick="showText();">แสดงข้อความ</button>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("btn2").onclick = function() {
+            let today = new Date();
+            alert("วันที่ปัจจุบัน: " + today.toLocaleDateString());
+        };
+
+        function showText() {
+            let text = document.getElementById("myText").value;
+            document.getElementById("result").innerHTML = "ข้อความที่คุณพิมพ์: " + text;
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
 ```
 **รูปผลการทดลอง**
-![รูปผลการทดลองที่ 1](images/image.png)
+![รูปผลลการทดลองที่1](<images/การทดลองที่1 java.png>)
 
 ## การทดลองที่ 2: พื้นฐาน JavaScript
 ### 2.1 การประกาศตัวแปรและชนิดข้อมูล
