@@ -192,10 +192,26 @@ let person = {
 
 ### บันทึกผลการทดลอง 2.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>การทดลองที่ 2.1</title>
+</head>
+<body>
+
+    <h1>ข้อมูลนักศึกษา</h1>
+
+    <div id="output"></div>
+
+    <!-- เรียกใช้ไฟล์ JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
 ```
 **รูปผลการทดลอง**
-![รูปผลการทดลองที่ 2.1](images/image.png)
+![รูปผลการทดลองที่ 2.1](<images/การทดลองที่ 2.1.png>)
 
 
 ### 2.2 การดำเนินการทางคณิตศาสตร์
@@ -247,10 +263,24 @@ number /= 2;          // เท่ากับ number = number / 2
 
 ### บันทึกผลการทดลอง 2.2
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบทดสอบ 2.2</title>
+</head>
+<body>
+
+    <h1>การดำเนินการทางคณิตศาสตร์</h1>
+
+    <div id="output"></div>
+
+    <script src="math.js"></script>
+</body>
+</html>
 ```
 **รูปผลการทดลอง**
-![รูปผลการทดลองที่ 2.2](images/image.png)
+![รูปผลการทดลองที่ 2.2](<images/การทดลองที่ 2.2.png>)
 
 ### 2.3 การควบคุมการทำงาน
 
@@ -381,11 +411,23 @@ for (let i = 1; i <= 5; i++) {
 
 ### บันทึกผลการทดลอง 2.3
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบทดสอบที่ 2.3 การควบคุมการทำงาน</title>
+</head>
+<body>
+    <h1>แบบทดสอบที่ 2.3 การควบคุมการทำงาน</h1>
+
+    <!-- เรียกใช้ไฟล์ JavaScript ภายนอก -->
+    <script src="control-structure.js"></script>
+</body>
+</html>
 ```
 **รูปผลการทดลอง**
-![รูปผลการทดลองที่ 2.3](images/image.png)
-
+![รูปผลการทดลองที่ 2.3](<images/การทดลองที่ 2.3.png>)
+![รูปผลการทดลองที่ 2.3](<images/การทดลองที่ 2.3.1.png>)
 ### 2.4 Functions และ Arrow Functions
 
 Functions คือกลุ่มคำสั่งที่สามารถนำมาใช้ซ้ำได้ ใน JavaScript มีวิธีการเขียน function 2 แบบหลักๆ:
